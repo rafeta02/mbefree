@@ -1,0 +1,27 @@
+.fa-info-circle {
+    color: #E04F67;
+    margin-right: 15px;
+}
+
+.fa-language {
+    color: #E04F67;
+    margin-right: 15px;
+}
+
+.fa-question-circle {
+    color: #E04F67;
+    margin-right: 15px;
+}
+
+.fa-dollar {
+    color: #E04F67;
+    margin-right: 15px;
+}
+
+a {
+    color: black;
+}
+
+div a {
+    color: white;
+}

@@ -1,0 +1,41 @@
+.accordion {
+    margin: 30px;
+}
+
+.card {
+    margin: 30px;
+    text-align: center;
+}
+
+.card-text {
+    margin-bottom: -5px;
+}
+
+.phone {
+    color: #51bce6;
+}
+
+.accordion-tab {
+    background-color: white;
+}
+
+.jumbotron-fluid {
+    background-image: url("../../../assets/images/wallpaper-faq.jpg");
+    background-position: center;
+    color: white;
+    height: 180px;
+}
+
+.display-5 {
+    margin-top: 80px;
+    margin-left: -5px;
+    font-size: 20pt;
+    text-shadow: 2px 2px rgb(0, 0, 0)
+}
+
+h4 {
+    margin-top: -5px;
+    margin-left: -5px;
+    font-size: 12pt;
+    text-shadow: 2px 2px rgb(0, 0, 0)
+}
