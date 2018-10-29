@@ -1,4 +1,23 @@
-<p>
-  layout works!
-</p>
+<!-- Grey with black text -->
+<nav class="navbar navbar-expand-sm" id="nav-main">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Lihat Semua</a>
+    </li>
+    <li class="nav-item" *ngFor="let area of areas">
+      <a class="nav-link">{{ area.name_en }}</a>
+    </li>
+  </ul>
+</nav>
+<main id="main">
+  <div id="cover">
+  </div>
+  <div id="list">
+    <div *ngFor="let loc of locations">
+      <div class="item" [ngStyle]="{'background-image':'url(http://www.befreetour.com/img/location_pic/'+loc.pic+')'}">
+        <h3>{{ loc.name }}</h3>
+      </div>
+    </div>
+  </div>
+</main>
 <app-footer-list></app-footer-list>

@@ -1,0 +1,64 @@
+#nav-main {
+    background-color: #fff;
+    position: relative;
+    overflow: auto;
+}
+
+#nav-main ul{
+    display: table;
+    margin: 0 auto;
+}
+
+#nav-main li{
+    display: table-cell;
+}
+
+#nav-main li a {
+    color: #323232;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+#nav-main li.active a{
+    color: red;
+    box-shadow: 0 -3px 0 red inset;
+}
+
+#nav-main li a:hover{
+    color: red;
+}
+
+#cover{
+    z-index: -1;
+    background-image: url("http://m.befreetour.com/src/bismillah/img/bg_mobile/hk-banner.jpg");
+    height: 7rem;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#main{
+    padding-bottom: 56px;
+}
+
+#list{
+    padding: 1rem 0;
+}
+
+#list .item{
+    height: 5rem;
+    width: 480px;
+    max-width: calc(100% - 3rem);
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto 1rem;
+    overflow: hidden;
+    border-radius: 5px;
+}
+#list .item h3{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 1.3rem;
+}

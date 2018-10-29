@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from 'selenium-webdriver/http';
+
 
 import { AppComponent } from './app.component';
 import { UiHomeModule } from './ui-home/ui-home.module';
@@ -18,6 +21,7 @@ import { AppRoutingModule } from './app-routing.module';
     UiProfileModule,
     UiListModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
