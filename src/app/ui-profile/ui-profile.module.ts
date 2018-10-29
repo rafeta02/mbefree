@@ -6,12 +6,14 @@ import { LayoutAfterLoginComponent } from './layout-after-login/layout-after-log
 import { FaqComponent } from './faq/faq.component';
 import { CardModule } from 'primeng/card';
 import { AccordionModule } from 'primeng/accordion';
+import { UiProfileRoutingModule } from './ui-profile-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
     CardModule,
-    AccordionModule
+    AccordionModule,
+    UiProfileRoutingModule
   ],
   declarations: [LayoutComponent, FooterComponent, LayoutAfterLoginComponent, FaqComponent],
   exports: [LayoutComponent, LayoutAfterLoginComponent, FaqComponent]

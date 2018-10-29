@@ -7,6 +7,7 @@ import { SliderModule } from 'angular-image-slider';
 import { BrowserModule } from '@angular/platform-browser';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { UiHomeRoutingModule } from './ui-home-routing.module';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     NgbModule,
     BrowserModule,
     BrowserAnimationsModule,
-    SliderModule
+    SliderModule,
+    UiHomeRoutingModule
   ],
   declarations: [FooterComponent, LayoutComponent],
   exports: [LayoutComponent]
