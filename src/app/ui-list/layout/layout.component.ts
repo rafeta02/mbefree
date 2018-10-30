@@ -30,7 +30,7 @@ export class LayoutComponent implements OnInit {
     this.listService.getContinents().subscribe(
       (data: Area[]) => {
         this.areas = data;
-        console.log(this.locations);
+        console.log(this.areas);
       },
       err => {
         console.log(err);
@@ -38,5 +38,12 @@ export class LayoutComponent implements OnInit {
     )
   }
 
+  onSelect(lokasi: Lokasi): void{
+    console.log(lokasi);
+  }
+
+  onMenu(area: Area):void{
+    console.log(area);
+  }
   
 }
