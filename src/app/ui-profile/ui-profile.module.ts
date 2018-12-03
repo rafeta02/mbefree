@@ -7,6 +7,7 @@ import { FaqComponent } from './faq/faq.component';
 import { CardModule } from 'primeng/card';
 import { AccordionModule } from 'primeng/accordion';
 import { UiProfileRoutingModule } from './ui-profile-routing.module';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,7 @@ import { UiProfileRoutingModule } from './ui-profile-routing.module';
     AccordionModule,
     UiProfileRoutingModule
   ],
-  declarations: [LayoutComponent, FooterComponent, LayoutAfterLoginComponent, FaqComponent],
-  exports: [LayoutComponent, LayoutAfterLoginComponent, FaqComponent]
+  declarations: [LayoutComponent, FooterComponent, LayoutAfterLoginComponent, FaqComponent, LoginComponent],
+  exports: [LayoutComponent, LayoutAfterLoginComponent, FaqComponent, LoginComponent]
 })
 export class UiProfileModule { }

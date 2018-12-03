@@ -3,13 +3,20 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { LayoutComponent } from './layout/layout.component';
 import { DetailComponent } from './detail/detail.component';
+import { LocationComponent } from './location/location.component';
+import { ActivityComponent } from './activity/activity.component';
 
 const routes: Routes = [
   {
     path: 'list',
     children: [
       { path: '', component: LayoutComponent },
-      { path: 'detail/', component: DetailComponent },
+    ]
+  }, 
+  {
+    path: 'activity/:id',
+    children: [
+      { path: '', component: ActivityComponent },
     ]
   }
 ];

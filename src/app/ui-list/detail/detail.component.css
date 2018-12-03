@@ -1,0 +1,29 @@
+#nav-main {
+    background-color: #fff;
+    position: relative;
+    overflow: auto;
+}
+
+#nav-main ul{
+    display: table;
+    margin: 0 auto;
+}
+
+#nav-main li{
+    display: table-cell;
+}
+
+#nav-main li a {
+    color: #323232;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+#nav-main li.active a{
+    color: red;
+    box-shadow: 0 -3px 0 red inset;
+}
+
+#nav-main li a:hover{
+    color: red;
+}

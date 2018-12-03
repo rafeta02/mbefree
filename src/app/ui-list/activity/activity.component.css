@@ -1,0 +1,100 @@
+body {
+    background-color: #f9f9f9;
+}
+#nav-main {
+    background-color: #fff;
+    position: relative;
+    overflow: auto;
+    margin-bottom: 8px;
+}
+
+#nav-main ul{
+    display: table;
+    margin: 0 auto;
+}
+
+#nav-main li{
+    display: table-cell;
+}
+
+#nav-main li a {
+    color: #323232;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+#nav-main li.active a{
+    color: red;
+    box-shadow: 0 -3px 0 red inset;
+}
+
+#nav-main li a:hover{
+    color: red;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 45px;
+    z-index: 800;
+    background-color: #E04F67;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+#navigator { 
+    padding: 8px;
+    display: inline-block;
+}
+#heroes {
+    height: 520px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+#icon-heroes {
+    width: auto;
+    height: 6rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#icon-heroes>img{
+    width: 6rem;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+
+}
+#icon-heroes-title {
+    margin-top: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+#produk{
+    background-color: #f9f9f9;
+    padding-top: 45px;
+    padding-bottom: 50px;
+}
+
+.act_ribbon {
+    position: absolute;
+    display: table;
+    top: 7px;
+    left: 0px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    background: #e04f67;
+    font-size: 11px;
+    line-height: 12px;
+    padding: 5px;
+    font-weight: 700;
+}
+

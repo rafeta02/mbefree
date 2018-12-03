@@ -1,0 +1,34 @@
+<form (submit)="loginUser($event)">
+  <div class="card">
+    <div class="card-body">
+      <img src="/src/assets/images/logo-befree.png" style="width: 60%; margin-bottom: 10px;">
+      <hr>
+  
+      <div class="form-login">
+        Email
+        <div class="input-group input-group-sm mb-3">
+          <input id="email" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
+            placeholder="Masukkan email anda">
+        </div>
+      </div>
+      <div class="form-login">
+        Password
+        <div class="input-group input-group-sm mb-3">
+          <input id="password" type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
+            placeholder="Masukkan password anda">
+        </div>
+  
+        <input type="submit" class="btn btn-danger btn-block" style="background-color: #E04F67;" value="Masuk">
+      </div>
+  
+      <p class="card-text">Belum punya akun ? <a href=""><b>Daftar disini</b></a></p>
+      <button type="button" class="btn btn-primary btn-block" style="background-color: #3b5998;"><span class="icon-fb"></span>Masuk</button>
+      <button type="button" class="btn btn-default btn-block">
+        <span class="icon-g"></span>Masuk</button>
+    </div>
+  </div>
+</form>
+
+<br><br><br>
+
+<app-footer-profile></app-footer-profile>

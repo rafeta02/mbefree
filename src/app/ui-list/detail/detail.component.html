@@ -1,4 +1,11 @@
-<p>
-  detail works!
-</p>
+<nav class="navbar navbar-expand-sm" id="nav-main">
+    <ul class="navbar-nav">
+        <li class="nav-item" [ngClass]="{'active': menu == 0}">
+            <a class="nav-link" (click)="onMenuSemua()">All</a>
+        </li>
+        <li class="nav-item" *ngFor="let menu of menuActivity" [ngClass]="{active: menu == menu.id}">
+            <a class="nav-link">{{ menu.nama_kategori_en }}</a>
+        </li>
+    </ul>
+</nav>
 <app-footer-list></app-footer-list>

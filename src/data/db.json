@@ -448,5 +448,188 @@
             "slug": "Hokkaido",
             "pic": "Hokkaido.jpg"
         }
+    ],
+
+    "CBF003": [
+        {
+            "code": "CCBF001",
+            "name": "일본",
+            "name_en": "Japan",
+            "name_id": null,
+            "location": [
+                {
+                    "name": "도쿄 (Tokyo)",
+                    "name_en": "Tokyo",
+                    "name_id": "Tokyo",
+                    "slug": "Tokyo",
+                    "pic": "Tokyo.jpg"
+                },
+                {
+                    "name": "오사카 (Osaka)",
+                    "name_en": "Osaka",
+                    "name_id": "Osaka",
+                    "slug": "Osaka",
+                    "pic": "Osaka.jpg"
+                },
+                {
+                    "name": "오키나와 (Okinawa)",
+                    "name_en": "Okinawa",
+                    "name_id": "Okinawa",
+                    "slug": "Okinawa",
+                    "pic": "Okinawa.jpg"
+                },
+                {
+                    "name": "나고야 (Nagoya)",
+                    "name_en": "Nagoya",
+                    "name_id": "Nagoya",
+                    "slug": "Nagoya",
+                    "pic": "Nagoya.jpg"
+                },
+                {
+                    "name": "후쿠오카 (Fukuoka)",
+                    "name_en": "Fukuoka",
+                    "name_id": "Fukuoka",
+                    "slug": "Fukuoka",
+                    "pic": "Fukuoka.jpg"
+                },
+                {
+                    "name": "교토 (Kyoto)",
+                    "name_en": "Kyoto",
+                    "name_id": "Kyoto",
+                    "slug": "Kyoto",
+                    "pic": "Kyoto.jpg"
+                },
+                {
+                    "name": "가고시마 (Kagoshima)",
+                    "name_en": "Kagoshima",
+                    "name_id": "Kagoshima",
+                    "slug": "Kagoshima",
+                    "pic": "Kagoshima.jpg"
+                },
+                {
+                    "name": "홋카이도 (Hokkaido)",
+                    "name_en": "Hokkaido",
+                    "name_id": "Hokkaido",
+                    "slug": "Hokkaido",
+                    "pic": "Hokkaido.jpg"
+                }
+            ]
+        },
+        {
+            "code": "CCBF002",
+            "name": "홍콩 & 마카오",
+            "name_en": "Hong Kong & Macau",
+            "name_id": null,
+            "location": [
+                {
+                    "name": "홍콩 (Hong Kong)",
+                    "name_en": "Hong Kong",
+                    "name_id": "Hong Kong",
+                    "slug": "Hong-Kong",
+                    "pic": "Hong-Kong.jpg"
+                },
+                {
+                    "name": "마카오 (Macau)",
+                    "name_en": "Macau",
+                    "name_id": "Macau",
+                    "slug": "Macau",
+                    "pic": "Macau.jpg"
+                }
+            ]
+        },
+        {
+            "code": "CCBF006",
+            "name": "대만",
+            "name_en": "Taiwan",
+            "name_id": null,
+            "location": [
+                {
+                    "name": "타이페이 (Taipei)",
+                    "name_en": "Taipei",
+                    "name_id": "Taipei",
+                    "slug": "Taipei",
+                    "pic": "Taipei.jpg"
+                }
+            ]
+        },
+        {
+            "code": "CCBF007",
+            "name": "한국",
+            "name_en": "South Korea",
+            "name_id": null,
+            "location": [
+                {
+                    "name": "서울 (Seoul)",
+                    "name_en": "Seoul",
+                    "name_id": "Seoul",
+                    "slug": "Seoul",
+                    "pic": "Seoul.jpg"
+                },
+                {
+                    "name": "제주도 (Jeju Island)",
+                    "name_en": "Jeju Island",
+                    "name_id": "Jeju Island",
+                    "slug": "Jeju-Island",
+                    "pic": "Jeju-Island.jpg"
+                },
+                {
+                    "name": "부산 (Busan)",
+                    "name_en": "Busan",
+                    "name_id": "Busan",
+                    "slug": "Busan",
+                    "pic": "Busan.jpg"
+                },
+                {
+                    "name": "강원 (Gangwon)",
+                    "name_en": "Gangwon",
+                    "name_id": "Gangwon",
+                    "slug": "Gangwon",
+                    "pic": "Gangwon.jpg"
+                },
+                {
+                    "name": "경기도 (Gyeonggi)",
+                    "name_en": "Gyeonggi",
+                    "name_id": "Gyeonggi",
+                    "slug": "Gyeonggi",
+                    "pic": "Gyeonggi.jpg"
+                },
+                {
+                    "name": "단양군 (Danyang)",
+                    "name_en": "Danyang",
+                    "name_id": "Danyang",
+                    "slug": "Danyang",
+                    "pic": "Danyang.jpg"
+                }
+            ]
+        },
+        {
+            "code": "CCBF010",
+            "name": "중국",
+            "name_en": "China",
+            "name_id": null,
+            "location": [
+                {
+                    "name": "상하이 (Shanghai)",
+                    "name_en": "Shanghai",
+                    "name_id": "Shanghai",
+                    "slug": "Shanghai",
+                    "pic": "Shanghai.jpg"
+                },
+                {
+                    "name": "베이징 (Beijing)",
+                    "name_en": "Beijing",
+                    "name_id": "Beijing",
+                    "slug": "Beijing",
+                    "pic": "Beijing.jpg"
+                },
+                {
+                    "name": "광저우 (Guangzhou)",
+                    "name_en": "Guangzhou",
+                    "name_id": "Guangzhou",
+                    "slug": "Guangzhou",
+                    "pic": "Guangzhou.jpg"
+                }
+            ]
+        }
     ]
 }

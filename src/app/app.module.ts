@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
-import { HttpClient } from 'selenium-webdriver/http';
-
+import { HttpClientModule, HTTP_INTERCEPTORS, HttpClient } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { UiHomeModule } from './ui-home/ui-home.module';
@@ -10,6 +8,10 @@ import { UiProfileModule } from './ui-profile/ui-profile.module';
 import { UiListModule } from './ui-list/ui-list.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
+import { CookieService } from 'ngx-cookie-service';
+
+import { RequestInterceptorService } from './shared/request-interceptor.service';
+import { TokenService } from './shared/token.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,12 @@ import { AppRoutingModule } from './app-routing.module';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    CookieService,
+    { provide: HTTP_INTERCEPTORS, useClass: RequestInterceptorService, multi: true },
+    TokenService,
+    HttpClient,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,29 @@
+.card {
+	text-align: center;
+	margin: 30px;
+}
+
+.card-text {
+	margin-top: 20px;
+}
+
+.form-login {
+	text-align: left;
+	font-weight: bold;
+}
+
+span.icon-fb {
+    background: url('/src/assets/images/facebook.png') transparent 5px 50% no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+}
+
+span.icon-g {
+    background: url('/src/assets/images/google.png') transparent 5px 50% no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+}

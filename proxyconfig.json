@@ -1,0 +1,10 @@
+{
+    "/posts": {
+        "target": "http://open.befreetour.com",
+        "secure": true,
+        "pathRewrite": {
+            "^/posts": ""
+        },
+        "changeOrigin": true
+    }
+}

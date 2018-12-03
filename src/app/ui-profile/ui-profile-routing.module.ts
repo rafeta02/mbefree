@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
 import { LayoutAfterLoginComponent } from './layout-after-login/layout-after-login.component';
 import { FaqComponent } from './faq/faq.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
@@ -13,9 +14,14 @@ const routes: Routes = [
       { path: 'login', component: LayoutComponent },
       { path: 'faq', component: FaqComponent },
     ]
+  },
+  {
+    path: 'login',
+    children: [
+      { path: '', component: LoginComponent },
+    ]
   }
 ];
-
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

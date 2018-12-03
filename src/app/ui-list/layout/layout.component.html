@@ -1,23 +1,34 @@
 <!-- Grey with black text -->
 <nav class="navbar navbar-expand-sm" id="nav-main">
   <ul class="navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Lihat Semua</a>
+    <li class="nav-item" [ngClass]="{active: menu == 0}">
+      <a class="nav-link" routerLink="/list" (click)="onMenuSemua()">Lihat Semua</a>
     </li>
-    <li class="nav-item" *ngFor="let area of areas" (click)="onMenu(area)">
-      <a class="nav-link">{{ area.name_en }}</a>
+    <li class="nav-item" *ngFor="let continent of continents" (click)="onMenu(continent.id)" [ngClass]="{active: menu == continent.id}">
+      <a class="nav-link">{{ continent.continent_name_en }}</a>
     </li>
   </ul>
 </nav>
 <main id="main">
   <div id="cover">
   </div>
-  <div id="list">
-    <div *ngFor="let loc of locations" (click)="onSelect(loc)">
-        <div class="item" [ngStyle]="{'background-image':'url(http://www.befreetour.com/img/location_pic/'+loc.pic+')'}">
-          <h3>{{ loc.name }}</h3>
+  <div id="list" *ngIf="menu == 0; else otherMenu">
+    <div *ngFor="let loc of populars" >
+        <div class="item" [ngStyle]="{'background-image':'url(http://www.befreetour.com/img/location_pic/'+loc.pic_lokasi+')'}"
+         (click)="onSelect(loc.id)">
+          <h3>{{ loc.nama_lokasi }}</h3>
         </div>
     </div>
   </div>
+  <ng-template #otherMenu>
+    <div id="list">
+      <div *ngFor="let loc of locations">
+        <div class="item" [ngStyle]="{'background-image':'url(http://www.befreetour.com/img/location_pic/'+loc.pic_lokasi+')'}"
+          (click)="onSelect(loc.location_id)">
+          <h3>{{ loc.nama_lokasi }}</h3>
+        </div>
+      </div>
+    </div>
+  </ng-template>
 </main>
 <app-footer-list></app-footer-list>
